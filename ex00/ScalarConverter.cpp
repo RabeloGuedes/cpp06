@@ -2,6 +2,7 @@
 #include <iostream>
 #include <climits>
 #include <iomanip>
+#include <cstdlib>
 
 namespace	Utils {
 	std::string floatTokens[] = {
