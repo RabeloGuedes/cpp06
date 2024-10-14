@@ -41,6 +41,8 @@ namespace Identifier {
 			std::cout << "B" << std::endl;
 		else if (dynamic_cast<C*>(p))
 			std::cout << "C" << std::endl;
+		else
+			std::cerr << "Error: unknown type." << std::endl;
 	}
 
 	void identify(Base &p) {
@@ -68,7 +70,6 @@ int main() {
     Base* p = Identifier::generate();
     Identifier::identify(p);
     Identifier::identify(*p);
-    Identifier::identify(NULL);
 
     delete p;
     return (0);
